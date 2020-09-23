@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Fizzy Drinks</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7402a41fff.js" crossorigin="anonymous"></script>  </head>
+  <body>
+<div class="container">
+  <header>
+    <nav id="mainMenu">
+      <div class="logo_area">
+        <a href=""><img src="/Img/logomenu.png" alt=""></a>
+      </div>
+      <div class="inner_main_menu">
+        <ul>
+          <!-- <li><a href=""> Início</a></li> -->
+          <li><a href="#rand-drinks">Aleatórios</a></li>
+          <li><a href="#categoria">Categorias</a></li>
+          <!-- <li><a href="">Drinks Aleatórios</a></li> -->
+          <li><a href="#last">Contato</a></li>
+          <li><a href="assessment.html">Assessment</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+<main>
+  <section id="first">
+    <div class="h2-img">
+      <hr>
+      <h2>Tudo sobre coquetéis</h2>
+      <hr>
+    </div>
+  </section>
+
+  <section id="rand-drinks"> 
+    <h3>Drinks Aleatórios</h3>
+    <hr class="hr-heading">
+  </section>
+  
+  <!-- <img id="landing_img" src="/Img/main_pic.png" alt=""> -->
+  <section id="categoria">
+    <h3 id="h3-categoria">BUSCAR</h3>
+    <section id="categoria-op">
+      <a href="#busca-nome">
+        <div class="card-cat">
+          <img class="img-categoria" src="/Img/Design sem nome.png" alt="">
+          <p>Por Nome</p>
+        </div>
+      </a>
+      <a href="#busca-tipo">
+        <div class="card-cat">
+          <img class="img-categoria" src="/Img/raio.png" alt="">
+          <p>Por Tipo</p>   
+        </div>
+      </a>  
+      <a href="#busca-ing">
+        <div class="card-cat">
+          <img class="img-categoria" src="/Img/pineapple.png" alt="">
+          <p>Por Ingredientes</p>    
+      </div>
+      </a>     
+    </section>
+  </section>   
+
+  <section id="busca-nome">
+    <h3>Pesquisa por nome</h3>
+    <hr class="hr-heading">
+    <form autocomplete="off" action="">
+      <div class="search-box">    
+        <div class="autocomplete">
+          <input type="text" id="keyword-nome" placeholder="Insira o Nome do Drink"/>
+        <button id="btn-nome" onclick="buscaNome()"><i class="fas fa-search"></i></button> 
+        </div>     
+      </div>
+    </form>
+    <div id="resultDrinksNome"></div>
+
+    </section>
+  <section id="busca-tipo">
+    <h3>Pesquisa por Tipo</h3>
+    <hr class="hr-heading">
+    <form autocomplete="off" action="">
+      <div class="search-box">    
+        <div class="autocomplete">
+          <input  type="text" id="keyword-tipo" placeholder="Insira o Tipo de Drink"/>
+      <button id="btn-tipo" onclick="buscaTipo()"><i class="fas fa-search"></i></button>  
+    </div>     
+    </div>
+    </form>
+    <div id="resultDrinksTipo"></div>
+  </section>
+
+  <section id="busca-ing">
+    <h3>Pesquisa por ingredientes</h3>
+    <hr class="hr-heading">
+    <form autocomplete="off" action="">
+      <div class="search-box">    
+        <div class="autocomplete">
+          <input type="text" id="keyword-ing" placeholder="Insira o Ingrediente do Drink"/>
+         <button id="btn-ing" onclick="buscaIng()"><i class="fas fa-search"></i></button>    
+  </div>     
+</div>
+</form>  
+  <div id="resultDrinksIng"></div>
+  </section>
+
+  <section id="last">
+    <h3>Contato</h3>
+    <hr class="hr-heading">
+    <div class="form-flex">
+      <div id="campos">
+        <form action="">
+          <div><input type="text" name="nome" id="nome-form" placeholder="Insira aqui seu nome" required></div>
+          <div><input type="email" name="e-mail" id="nome-form" placeholder="Insira aqui seu e-mail" required></div>
+          <div><textarea name="msg" id="msg-form" cols="30" rows="10" placeholder="Escreva aqui sua mensagem" required></textarea></div>
+          <div><button>ENVIAR</button></div>        
+        </form>
+      </div>
+      
+      <div id="fale-conosco">
+        <h4>Fale Conosco</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illo velit pariatur voluptatem voluptatibus dolorem dolor dolores nulla ipsa. Facilis aspernatur non amet explicabo sint, saepe molestias temporibus repudiandae officia.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div id="foot-info">
+    <div class="social-icons"> 
+      <ul>
+      <!-- <ul class="social-icons"> -->
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+      <p>&copy;Instituto INFNET - Assessment para o Bloco Front-End</p>
+    </div>
+    <div id="footer-p">
+ 
+    </div>
+  </div> 
+</footer>
+<script src="script.js"></script>
+</div>
+</body>
+</html>
