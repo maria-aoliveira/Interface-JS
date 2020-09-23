@@ -25,6 +25,7 @@
 
 .container{
    width: 1024px;
+   margin: 0 auto;
 } 
 
 body{
@@ -39,6 +40,8 @@ header{
 
 #mainMenu{
    z-index: 99999;
+   width: 1024px;
+
 }
 
 .inner_main_menu{
@@ -109,7 +112,7 @@ header{
     /* border: 1px solid black; */
 }
 
-.h2-img{
+.h1-img{
     /* border: 1px solid white; */
     /* width: 50%; */
     position: relative;
@@ -117,7 +120,7 @@ header{
     margin: 10px;
 }
 
-#first h2{
+#first h1{
     /* border: 1px solid red; */
     text-align: center;
     font-size: 5em;
@@ -141,7 +144,7 @@ hr{
 }
 
 #categoria{
-    background: url(/Img/texture_wall\ cópia.png);
+    background: url(/Img/wall_category.png);
     height: 809px;
     width: 1024px;
 }
