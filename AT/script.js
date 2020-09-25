@@ -64,7 +64,7 @@ async function buscaTipo(){
   clear(resultDrinksTipo);
   // document.getElementById("rand-drinks").style.visibility = "hidden";
   let keyword = document.getElementById("keyword-tipo").value;
-  let url = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=' + keyword;
+  let url = 'https://the-cocktail-db.p.rapidapi.com/filter.php?c=' + keyword;
   const response = await fetch (url,{
       "method": "GET",
       "headers": {
@@ -221,7 +221,7 @@ function collapsible(coll){
     });
   }
 }
-
+/*
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
@@ -239,6 +239,7 @@ function myFunction() {
     mainMenu.classList.remove("sticky");
   }
 }
+*/
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/

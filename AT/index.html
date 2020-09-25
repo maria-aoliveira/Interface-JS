@@ -2,8 +2,10 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Fizzy Drinks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" >
+    <meta name="keywords" content="HTML, CSS, JavaScript, Assessment, Infnet, Drinks">
+    <meta name="author" content="Maria Eduarda Almeida Oliveira">
+    <title>Tudo Sobre Coquetéis</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7402a41fff.js" crossorigin="anonymous"></script>  </head>
   <body>
@@ -11,20 +13,32 @@
   <header>
     <nav id="mainMenu">
       <div class="logo_area">
-        <a href=""><img src="/Img/logomenu.png" alt=""></a>
+        <a href=""><img src="/Img/logomenu.png" alt="Logo do site" title="Logo do Tudo Sobre Coquetéis"></a>
       </div>
       <div class="inner_main_menu">
         <ul>
-          <!-- <li><a href=""> Início</a></li> -->
           <li><a href="#rand-drinks">Aleatórios</a></li>
           <li><a href="#categoria">Categorias</a></li>
-          <!-- <li><a href="">Drinks Aleatórios</a></li> -->
           <li><a href="#last">Contato</a></li>
           <li><a href="assessment.html">Assessment</a></li>
         </ul>
       </div>
     </nav>
+
+     <!-- <div class="inner_main_menu" style="display: flex; ">
+        <ul id="ul-esq" style="border: 1px solid red;">
+          <li><a href="#rand-drinks">Aleatórios</a></li>
+          <li><a href="#categoria">Categorias</a></li>
+          <div class="logo_area">
+            <a href=""><img src="/Img/logomenu.png" alt=""></a>
+          </div>
+        </ul>
+        <ul id="ul-dir" style="border: 1px solid yellow;">
+          <li><a href="#last">Contato</a></li>
+          <li><a href="assessment.html">Assessment</a></li>
+        </ul> -->
   </header>
+
   
 <main>
   <section id="first">
@@ -36,29 +50,29 @@
   </section>
 
   <section id="rand-drinks"> 
-    <h3>Drinks Aleatórios</h3>
+    <h2>Drinks Aleatórios</h2>
     <hr class="hr-heading">
   </section>
   
   <!-- <img id="landing_img" src="/Img/main_pic.png" alt=""> -->
   <section id="categoria">
-    <h3 id="h3-categoria">BUSCAR</h3>
+    <h2 id="h2-categoria">BUSCAR</h2>
     <section id="categoria-op">
       <a href="#busca-nome">
         <div class="card-cat">
-          <img class="img-categoria" src="/Img/Design sem nome.png" alt="">
+          <img class="img-categoria" src="/Img/cacto.png" alt="cacto neon" title="Cacto - categoria nome">
           <p>Por Nome</p>
         </div>
       </a>
       <a href="#busca-tipo">
         <div class="card-cat">
-          <img class="img-categoria" src="/Img/raio.png" alt="">
+          <img class="img-categoria" src="/Img/raio.png" alt="raio neon" title="Raio - categoria tipo">
           <p>Por Tipo</p>   
         </div>
       </a>  
       <a href="#busca-ing">
         <div class="card-cat">
-          <img class="img-categoria" src="/Img/pineapple.png" alt="">
+          <img class="img-categoria" src="/Img/pineapple.png" alt="abacaxi neon" title="Abacaxi - categoria ingrediente">
           <p>Por Ingredientes</p>    
       </div>
       </a>     
@@ -66,9 +80,9 @@
   </section>   
 
   <section id="busca-nome">
-    <h3 id="h3-nome">Pesquisa por nome</h3>
+    <h2 id="h2-nome">Pesquisa por nome</h2>
     <hr class="hr-heading">
-    <form autocomplete="off" action="#h3-nome">
+    <form autocomplete="off" action="#h2-nome">
       <div class="search-box">    
         <div class="autocomplete">
           <input type="text" id="keyword-nome" placeholder="Insira o Nome do Drink"/>
@@ -80,9 +94,9 @@
 
     </section>
   <section id="busca-tipo">
-    <h3 id="h3-tipo">Pesquisa por Tipo</h3>
+    <h2 id="h2-tipo">Pesquisa por Tipo</h2>
     <hr class="hr-heading">
-    <form autocomplete="off" action="#h3-tipo">
+    <form autocomplete="off" action="#h2-tipo">
       <div class="search-box">    
         <div class="autocomplete">
           <input  type="text" id="keyword-tipo" placeholder="Insira o Tipo de Drink"/>
@@ -94,9 +108,9 @@
   </section>
 
   <section id="busca-ing">
-    <h3 id="h3-ing">Pesquisa por ingredientes</h3>
+    <h2 id="h2-ing">Pesquisa por ingredientes</h2>
     <hr class="hr-heading">
-    <form autocomplete="off" action="#h3-ing">
+    <form autocomplete="off" action="#h2-ing">
       <div class="search-box">    
         <div class="autocomplete">
           <input type="text" id="keyword-ing" placeholder="Insira o Ingrediente do Drink"/>
@@ -108,20 +122,20 @@
   </section>
 
   <section id="last">
-    <h3>Contato</h3>
+    <h2>Contato</h2>
     <hr class="hr-heading">
     <div class="form-flex">
       <div id="campos">
-        <form action="">
+        <form action="https://formspree.io/xvovoqgn">
           <div><input type="text" name="nome" id="nome-form" placeholder="Insira aqui seu nome" required></div>
-          <div><input type="email" name="e-mail" id="nome-form" placeholder="Insira aqui seu e-mail" required></div>
+          <div><input type="email" name="e-mail" id="email-form" placeholder="Insira aqui seu e-mail" required></div>
           <div><textarea name="msg" id="msg-form" cols="30" rows="10" placeholder="Escreva aqui sua mensagem" required></textarea></div>
           <div><button>ENVIAR</button></div>        
         </form>
       </div>
       
       <div id="fale-conosco">
-        <h4>Fale Conosco</h4>
+        <h3>Fale Conosco</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illo velit pariatur voluptatem voluptatibus dolorem dolor dolores nulla ipsa. Facilis aspernatur non amet explicabo sint, saepe molestias temporibus repudiandae officia.</p>
       </div>
     </div>
@@ -132,9 +146,9 @@
     <div class="social-icons"> 
       <ul>
       <!-- <ul class="social-icons"> -->
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
       </ul>
       <p>&copy;Instituto INFNET - Assessment para o Bloco Front-End</p>
     </div>
