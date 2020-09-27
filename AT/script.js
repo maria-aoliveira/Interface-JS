@@ -221,17 +221,23 @@ function collapsible(coll){
     });
   }
 }
+
+function burguer() {
+  var x = document.getElementById("mainMenu");
+  if (x.className === "teste") {
+    x.className += " responsive";
+  } else {
+    x.className = "teste";
+  }
+}
 /*
-// When the user scrolls the page, execute myFunction
+//sticky menu - usar caso fixed nao funcione
 window.onscroll = function() {myFunction()};
 
-// Get the navbar
 var mainMenu = document.getElementById("mainMenu");
 
-// Get the offset position of the mainMenu
 var sticky = mainMenu.offsetTop;
 
-// Add the sticky class to the mainMenu when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     mainMenu.classList.add("sticky")

@@ -76,6 +76,12 @@ header{
    overflow: hidden;
 }
 
+.inner_main_menu ul li:nth-child(5){
+  display: none;
+  background-color: #000000;
+}
+
+
 .inner_main_menu ul li a{
    color: #FFFFFF;
    font-size: 1em;
@@ -89,9 +95,6 @@ header{
    color: #DCE1FD;
 }
 
-.icon{
-  display: none;
-}
 
 #main_menu{
    width: 100%;
@@ -760,18 +763,19 @@ footer{
 #foot-as{
   text-align: center;
   width: 100%;
-  padding: 20px;
   margin-top: 10vh;
+  padding-top: 20px;
+
 }
 
-/* celulares */
-@media (min-width: 320px) and (max-width: 480px){
+@media (max-width: 320px){
   header{
   width: 50%;
   overflow: hidden;      
 }
   .container{
   width: 100%;
+  
   /* border: 1px solid red; */
 }
 
@@ -781,13 +785,20 @@ footer{
 
   .inner_main_menu{
   padding: 0;
+  background-color: transparent;
   }
 
   .inner_main_menu ul{
   padding: 0;
-  height: 55px;
+  /* height: 55px; */
   /* text-align: center; */
   }
+
+  .inner_main_menu ul li:nth-child(5){
+    display: block;
+    background-color: #000000;
+  }
+  
 
   .inner_main_menu ul li{
   margin: 0;
@@ -797,7 +808,40 @@ footer{
   }
 
   .inner_main_menu ul li a{
-  font-size: .4em;
+    font-size: .4em;
+    }
+
+  
+    /* testeteste */
+  .inner_main_menu ul li:not(:nth-child(5)){
+    display: none;  
+  }
+
+  .logo_area{
+    display: none;
+  }
+  .inner_main_menu ul li:nth-child(5){
+    float: left;
+    color: #000000;
+  }
+
+  .teste.responsive div{
+    background-color: #000000;
+    width: 30%;
+    margin: 0;
+    height: 180px;
+  }
+
+  .teste.responsive ul li{
+    display: inline-block;  
+  }
+
+  .teste.responsive .inner_main_menu ul{
+    text-align: unset;  
+  }
+
+  .teste.responsive inner_main_menu ul li:nth-child(5) {
+    float: none;
   }
 
   .form-flex{
@@ -847,7 +891,165 @@ footer{
 
   .show-drinks{
   width: 100%;
-  margin: 10px;
+  margin: 0 auto;
+  padding: 0;
+  }
+
+  .search-box{
+  margin: 0 auto;
+  width: 60%;
+  padding: 10px;
+  }
+
+  #first{
+  background-size: cover;  
+  background-size: 100%;
+  height: 300px;
+  }
+
+  #first h1{
+  font-size: 2em;
+  }
+
+  .h1-img{
+  top: 40%;
+  }
+
+  .autocomplete{
+  width: 100%;
+  }
+
+  #keyword-nome, #keyword-tipo, #keyword-ing{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  
+  }
+
+  #h2-categoria{
+  font-size: 4em;
+  position: static;
+  margin: 40px 0;
+  width: 100%;
+  }
+
+  #btn-nome, #btn-tipo, #btn-ing{
+  height: 20%;
+  /* font-size: 1em; */
+  position: absolute;
+  top: 20%;
+  left: 85%;
+  }
+
+  h2{
+  font-size: 1.5em;
+  }
+
+  .img-categoria{
+  height: 100px;
+  }
+
+  .logo_area{
+  left: 42vw;
+  }
+
+  .logo_area img{
+  height: 50px;
+  }
+
+  .social-icons{
+  position: static;
+  margin: 0 auto;
+
+  }
+
+}
+/* celulares */
+@media (min-width: 321px) and (max-width: 480px){
+  header{
+  width: 50%;
+  overflow: hidden;      
+}
+  .container{
+  width: 100%;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+  #mainMenu{
+  width: 100%;
+  }
+
+  .inner_main_menu{
+  padding: 0;
+  }
+
+  .inner_main_menu ul{
+  padding: 0;
+  height: 55px;
+  /* text-align: center; */
+  }
+
+  .inner_main_menu ul li{
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+  /* border: 1px solid white; */
+  }
+
+  .inner_main_menu ul li a{
+    font-size: .4em;
+    }
+
+  
+  .form-flex{
+  display: block;
+  }
+
+  #campos, #fale-conosco{
+  width: 100%;
+  margin: 60px auto;
+  padding: 0;
+  }
+
+  #fale-conosco h3{
+  text-align: center;
+  }
+
+  .show-drinks{
+  margin: 0 auto;
+  padding: 15px;
+  margin: 20px;
+  width: 40%;
+
+  }
+
+  #categoria{
+  width: 100%;
+
+  }
+
+  #categoria-op{
+  margin: 0;
+  display: block;
+  position: static;
+
+  }
+
+  .card-cat{
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 50px;
+  height: 160px;
+  }
+
+  .card-cat p{
+  font-size: 0.7em;  
+  }
+
+  .show-drinks{
+  width: 100%;
+  margin: 0 auto;
   padding: 0;
   }
 
@@ -890,7 +1092,7 @@ footer{
 
   #btn-nome, #btn-tipo, #btn-ing{
   position: absolute;
-  top: 15px;
+  top: 15%;
   left: 85%;
   }
 
@@ -916,10 +1118,20 @@ footer{
 
   }
 
+  #cenario, #contatos, #exp{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #foot-as, #main-as{
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+
 }
 
 
-@media (min-width: 480px) and (max-width: 860px){
+@media (min-width: 481px) and (max-width: 860px){
 
   /* body{
     overflow: hidden;
@@ -1050,8 +1262,10 @@ footer{
   }
 
   #btn-nome, #btn-tipo, #btn-ing{
+    font-size: .8em;
+    height: 50%;
     position: absolute;
-    top: 15px;
+    top: 20%;
     left: 85%;
   }
 
@@ -1074,12 +1288,21 @@ footer{
   .social-icons{
     position: static;
     margin: 0 auto;
-    
+  
+  }
+  #cenario, #contatos, #exp{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #foot-as, #main-as{
+    padding-top: 20px;
+    margin-top: 20px;
   }
 
 }
 
-@media (min-width: 861px) and (max-width: 1023px){
+@media (min-width: 861px) and (max-width: 1124px){
   header{
     width: 50%;
     overflow: hidden;      
@@ -1091,7 +1314,10 @@ footer{
 }
 
   #mainMenu{
-  width: 100%;
+  /* width: 100%; */
+  width: 98%;
+  overflow: hidden;
+  /* border: 1px solid violet; */
 }
 
   .inner_main_menu{
@@ -1133,7 +1359,11 @@ footer{
   #categoria{
   /* background-image: none; */
   background-size: 100%;
-  width: 100%;
+  /* width: 100%; */
+  width: 98%;
+  overflow: hidden;
+
+  /* border: 1px solid green; */
   }
 
   #categoria-op{
@@ -1168,6 +1398,10 @@ footer{
   #first{
   background-size: cover;  
   background-size: 100%;
+  width: 98%;
+  overflow: hidden;
+
+  /* border: 1px solid saddlebrown; */
   }
 
   #first h1{
@@ -1196,8 +1430,9 @@ footer{
   }
 
   #btn-nome, #btn-tipo, #btn-ing{
+    height: 60%;
   position: absolute;
-  top: 10px;
+  top: 12%;
   left: 85%;
   }
 
@@ -1213,12 +1448,29 @@ footer{
   height: 100px;
   }
 
+  #foot-info{
+    /* border: 1px solid white; */
+    width: 98%;
+  overflow: hidden;
+
+  }
+
   .logo_area{
   left: 48%;
   }
 
   .logo_area img{
   height: 60px;
+  }
+
+  #cenario, #contatos, #exp{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #foot-as, #main-as{
+    padding-top: 20px;
+    margin-top: 20px;
   }
 }
 
